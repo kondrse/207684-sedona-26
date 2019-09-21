@@ -1,0 +1,174 @@
+body{
+  font-family: "PT Sans", Arial;
+  font-size: 14px;
+  background-color: #ffffff;
+  margin: 0;
+  width: 1280px;
+  padding: 0;
+  text-transform: uppercase;
+  
+}
+.visually-hidden{
+  display: none;
+}
+
+header{
+  width: 1200px;
+  height: 56px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 0;
+  padding: 0;
+  background-color: #ffffff;
+  
+}
+img.main-header-logo{
+  width: 140px;
+  height: 70px;
+  margin-left: 580px;
+  margin-right: auto;
+}
+a{
+  text-decoration: none;
+}
+.main-navigation{
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  margin-top: 10px;
+  background-color: #ffffff;
+  display: inline;
+  text-align: center;
+}
+.site-navigation,
+.user-navigation{
+  list-style: none;
+}
+.site-navigation a,
+.user-navigation a{
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus{
+  background-color: #ffffff;
+  color: #81b3d2;
+}
+.intro section{
+  width: 1200px;
+  height: 800px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 0;
+  padding-top: 0;
+  border: 0;
+  background-color: #ffffff;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  
+}
+.welcome{
+  width: 459px;
+  height: 353px;
+  margin-right: auto;
+  margin-left: 380px;
+  margin-top: 132px;
+}
+.polygon{
+  width: 1201px;
+  height: 59px;
+  margin-top: 0px;
+}
+
+
+.info-block{
+  width: 1200px;
+  height: 216px;
+  margin-top: 0px;
+  background-color: #ffffff;
+}
+.info-sedona{
+  width: 1200px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 65px;
+}
+.info-proposel{
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+main{
+  width: 1200px;
+  margin-right: 40px;
+  margin-right: 40px;
+  background-color: inherit;
+  background-position: center;
+
+}
+.advantages{
+  width: 1200px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #ffffff;
+}
+.advantage-block> li{
+  list-style: none;
+}
+.search{
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 1200px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 65px;
+}
+.searc-hotel-button{
+  width: 568px;
+  height: 86px;
+  background-color: #766357;
+  font-size: 21px;
+  color: #ffffff;
+}
+.map{
+  margin-left: 40px;
+  margin-right: auto;
+}
+.map-sedona{
+  width: 1200px;
+  height: auto;
+}
+
+footer{
+  width: 1200px;
+  margin-bottom: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.social-links{
+  list-style: none;
+  display: inline;
+}
+.social-links>li>a{
+  width: 17px;
+  height: 15px;
+}
+.icon-twitter,
+.icon-facebook,
+.icon-youtube{
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  background-position: center;
+}
+.logo-htmlacademy{
+  width: 115px;
+  height: 41px;
+}
+
