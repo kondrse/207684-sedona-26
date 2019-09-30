@@ -1,11 +1,10 @@
 body{
   font-family: "PT Sans", Arial;
   font-size: 14px;
-  background-color: gray;
+  background-color: #ffffff;
   margin: 0;
   width: 1280px;
   padding: 0;
-  border: 0;
   text-transform: uppercase;
 
   
@@ -13,47 +12,59 @@ body{
 .visually-hidden{
   display: none;
 }
+
+
 header{
   width: 1200px;
   height: 56px;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 0;
-  margin-bottom: 0;
   padding: 0;
-  background-color: #ffffff;
-  
+  background-color: #ffffff;  
 }
 img.main-header-logo{
   width: 140px;
   height: 70px;
   position: absolute;
   left: 600px;
-  top: 14px;
+  top: 0;
   right: auto;
   margin: 0;
+}
+a{
+  text-decoration: none;
 }
 .main-navigation{
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   margin-top: 0;
-  margin-bottom: 0;
   background-color: #ffffff;
-} 
-.container{
-  display: flex;
-  align-items: center;
-} 
-.site-navigation{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
+}
+.site-navigation,
+{
+  margin: 0;
+  margin-left: 50px;
+  padding: 0;
   list-style: none;
 }
-a{
-  text-decoration: none;
+.site-navigation li {
+  display: inline-block;
+  margin-right: 180px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.site-navigation a,
+.user-navigation a{
   color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+
+  background-color: #ffffff;
+  color: #81b3d2;
 }
 
 .intro section{
@@ -65,23 +76,28 @@ a{
   padding-top: 0;
   border: 0;
   background-color: #ffffff;
-  background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
-  background-position: center bottom 215px, top center;
-  background-size: 1201px 59px, 1200px 800px;
+  background-image: url("../img/background-photo.jpg");
+  background-position: top center;
   background-repeat: no-repeat; 
 }
 .welcome{
   width: 459px;
   height: 353px;
   margin-right: auto;
-  margin-left: 400px;
-  margin-top: 76px;
+  margin-left: 250px;
+  margin-top: 10px;
+}
+.polygon{
+  width: 1201px;
+  height: 59px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .info-block{
   width: 1200px;
   height: 216px;
-  margin-top: 151px;
-  margin-bottom: 0px;
+  margin-top: 0px;
   background-color: #ffffff;
 }
 .info-sedona{
@@ -99,74 +115,28 @@ a{
 }
 main{
   width: 1200px;
-  margin-top: -20px;
   margin-right: 40px;
-  margin-left: 40px;
-  background-color: #ffffff;
+  margin-right: 40px;
+  background-color: inherit;
   background-position: center;
-}
-.advantage-block{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
 
+}
+.advantages{
+  width: 1200px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #ffffff;
+}
+.advantage-block> li{
+  list-style: none;
 }
 .real-city,
 .devil-bridge{
-  width: 1200px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   background-color: #81b3d2;
   color: #ffffff;
-  text-align: center;
 }
-.real-city-text{
-  padding: 50px;
-}
-
-h3{
-  font-size: 21px;
-}
-
-.recomendation{
-  text-align: center;
-  background-color: #ffffff;
-  width: 380px;
-  padding-top: 60px;
-  padding-bottom: 71px;
-  margin-right: 0;
-  margin-left: 0;
-
-}
-.advantage-text{
-  text-align: center;
-}
-.devil-bridge-text{
-  padding: 50px;
-}
-.all-advantage{
-  width: 1200px;
-  height: 257px;
-  background-color: #eeeeee;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.advantage-text{
-  margin-left: 73px;
-  margin-right: 73px;
-}
-
 .search{
-  margin-left: 0;
+  margin-left: 40px;
   margin-right: 40px;
   width: 1200px;
   font-size: 21px;
@@ -174,7 +144,6 @@ h3{
   line-height: 26px;
   text-align: center;
   padding-top: 65px;
-  padding-left: 0;
 }
 .search p{
   font-size: 14px;
@@ -192,17 +161,13 @@ form{
   width: 568px;
   height: 395px;
   margin: 0 auto;
-  padding: 60;
+  padding: 0;
   background-color: #ffffff;
-  position: absolute;
-  left: 350px;
-  right: auto;
 }
 label{
   font-size: 14px;
   font-weight: normal;
   margin-top: 55px;
-  margin-left: 55px;
   display: inline-block;
 
   
@@ -225,8 +190,7 @@ input[type="number"]{
   padding-left: 0px;
 }
 .kids{
-  margin-left: 20px;
-  margin-right: 60px;
+  margin-left: 80px;
 }
 .old,
 .kids{
@@ -245,7 +209,7 @@ input[type="number"]{
   margin: 54px;
 }
 .map{
-  margin-left: auto;
+  margin-left: 40px;
   margin-right: auto;
 }
 .map-sedona{
@@ -258,25 +222,12 @@ footer{
   margin-bottom: 0px;
   margin-left: 40px;
   margin-right: 40px;
-  background-color: #ffffff;
 }
-.footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-.visit{
-  font-weight: bold;
-}
-.social{
+.social-links li{
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  display: inline-block;
 }
-.social-links{
+.social-links>li>a{
   width: 17px;
   height: 15px;
 
@@ -284,20 +235,16 @@ footer{
 .icon-twitter,
 .icon-facebook,
 .icon-youtube{
-  
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
   background-position: center;
-  background-size: 45px 50px;
-  margin: 10px;
 }
 .academy{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
 }
 .logo-htmlacademy{
   width: 115px;
   height: 41px;
-  margin-left: 10px;
 }
 

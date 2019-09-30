@@ -5,34 +5,35 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
-    <section class="intro">
+    
     <!--Header-->
     <header class="main-header">
       <div class="logo">
         <img class="main-header-logo" id="logo-sedona" src="img/logo-sedona.svg"
       width="140" height="72" alt="Логотип Седона">
       </div>
+      
       <nav class="main-navigation">
+        <div class="conteiner">
         <ul class="site-navigation">
-          <li><a href="">информация</a>
+          <li><a href="">информация</a></li>
           <li><a href="">фото и видео</a></li>
-          <li><a href="">карта штата</a>
-          <li><a href="hotels.html">гостиницы</a>
-          </li>
+          <li><a href="">карта штата</a></li>
+          <li><a href="hotels.html">гостиницы</a></li>
         </ul>
+      </div>
       </nav>
     </header>
-    
+    <!--intro-->
+    <section class="intro">
       
       <h1 class="visually-hidden">welcome</h1>
       <section class="welcome">
       <img class="welcome" src="img/intro-welcome.svg" alt="welcome to sedona">
-      <img class="polygon" id="polygon" src="img/polygon.svg" alt="polygon">
-      
-    
-    
+
       <div class="info-block">
         <p class="info-sedona">Седона - небольшой городок в аризоне,<br>
            заслуживающий большего!
@@ -41,50 +42,59 @@
       </div>
       </section>
     </section>
+  
     <main class="content">
     <h2 class="visually-hidden">Преимущества</h2>
     <section class="advantage">
       
       <ul class="advantage-block">
       
-        <li><h3>Настоящий городок</h3>
+        <li class="real-city">
+         <div class="real-city-text">
+          <h3>Настоящий <br> городок</h3>
             <p>- №1 -<br>
                судона - не аттракцион для туристов,<br>
                там течёт своя жизнь
             </p>
+          </div>
             <img src="img/street-photo.jpg" alt="Фото горда">
         </li>
       
-        <li>
+        <li class="recomendation">
           <img src="img/icon-home.svg" alt="Дом">
+          <h3>Жильё</h3>
           <p>
             рекомендуем пожить в настоящем<br>
             мотеле, всё как в кино!
           </p>
         </li>
-        <li>
+        <li class="recomendation">
           <img src="img/icon-food.svg" alt="Еда">
+          <h3>Еда</h3>
           <p>всегда заказывайте фирменный бургер,<br>
              вы не разочаруетесь!
           </p>
         </li>
-        <li>
-          <p>
+        <li class="recomendation">
             <img src="img/icon-souvenir.svg" alt="Сувениры">
+            <h3>Сувениры</h3>
             <p>не только китайского, но и местного<br>
                производства!
           </p>
         </li>
-        <li>
+        <li class="devil-bridge">
           <img src="img/devil-bridge-photo.jpg" alt="мост дьявола">
+          <div class="devil-bridge-text">
           <h3>там есть<br>
              мост дьявола</h3>
           <p>- №2 -<br>
              да, по нему нужно пройти! если конечно<br>
              вы осмелитесь
           </p>
+        </div>
         </li>
-        <li>
+        <div class="all-advantage">
+        <li class="advantage-text">
           <h3>небольшая<br>
              площадь</h3>
            <p>- №3 -<br>
@@ -92,7 +102,7 @@
              находятся очень близко
           </p>
         </li>
-        <li>
+        <li class="advantage-text">
           <h3>красивая<br>
              дорога</h3>
           <p>- №4 -<br>
@@ -100,7 +110,7 @@
              не скучно!
           </p>
         </li>
-        <li>
+        <li class="advantage-text">
           <h3>мало<br>
              туристов</h3>
           <p>- №5 -<br>
@@ -122,15 +132,15 @@
         <input type="date" name="date-in" value="27 Апреля 2017"><br>
         <label for="">Дата выезда:</label>
         <input type="date" name="date-out" value="4 Июля 2017"><br>
-         <div>
-        <label for="">Взрослые</label>
-        <input type="number" name="old" value="2">
+         <div class="old">
+        <label for="">Взрослые:</label>
+        <input type="number" name="old" min="1" max="100" value="2">
       </div>
-      <div>
-        <label for="">Дети</label>
-        <input type="number" name="kids" value="0">
+      <div class="kids">
+        <label for="">Дети:</label>
+        <input type="number" name="kids" min="0" max="100" value="0">
       </div>
-      <button type="button" name="search">Найти</button>
+      <button class="search-request" type="button" name="search">Найти</button>
       </form>
     </section><!--поиск закончен-->
 
@@ -140,18 +150,27 @@
        </div>
     </main>
     <footer> <!--footer start-->
+      <div class="footer">
       <div class="hash">
-      <p>#visitsedona</p>
+      <p class="visit">#visitsedona</p>
     </div>
-    <ul class="social-links">
+    <div class="social">
+    <!-- class="social-links">-->
+        <div>
         <li><a class="icon-twitter" href="http://twitter.com"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+      </div>
+      <div>
         <li><a class="icon-facebook" href="http://facebook.com"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+      </div>
+      <div>
         <li><a class="icon-youtube" href="http://youtube.com"><img src="img/icon-youtube.svg" alt="youtube"></a></li>
-      </ul>
+      </div>
+    </div>
       <div class="academy">
-          <p>website by</p>
+            <p>website by</p>
           <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-htmlacademy" src="img/logo-htmlacademy.svg" alt="HTML ACADEMY"></a>
       </div>
+    </div>
     </footer> <!--footer end-->
 
   </body>
