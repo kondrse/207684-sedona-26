@@ -1,19 +1,25 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body>
+    <div class="content">
     <!--Header-->
-    <header>
-      <a href="index.html"> <img src="img/logo-sedona.svg" alt="Логотип Седона"></a>  <!-- логотип-ссылка -->
+    <header class="main-header">
+     <div class="logo">
+      <a href="index.html"> <img class="main-header-logo" src="img/logo-sedona.svg" alt="Логотип Седона"></a>
+     </div>  <!-- логотип-ссылка -->
       <nav> <!-- навигация -->
-        <ul>
-          <li><a href="">информация</a>
+        <ul class="site-navigation links">
+          <li><a href="">информация</a></li>
           <li><a href="">фото и видео</a></li>
-          <li><a href="">карта штата</a>
-          <li><a href="hotels.html">гостиницы</a>
+          <li><a href="">карта штата</a></li>
+          <li><a id="hotels" href="hotels.html">гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -40,48 +46,54 @@
           <input type="button" name="show" value="Показать">
         </div>
       </form>
-      <section>
-      <div>
+      <section class="hotels">
+      <div class="hotel1">
         <img src="img/photo-amara.jpg" alt="Фото Amara resort">
         <h3>Amara resort & spa</h3>
         <p>Гостиница</p>
         <p>от 4000 Р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button class="more" type="button">Подробнее</button>
+        <button class="more book" type="button">Забронировать</button>
+        <button class="rating" type="button">Рейтинг: 8.5</button>
       </div>
-      <div>
+      <div class="hotel2">
         <img src="img/photo-desert.jpg" alt="Фото Desert Quail Innt">
         <h3>Desert Quail Inn</h3>
         <p>мотель</p>
         <p>от 3000 Р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button class="more" type="button">Подробнее</button>
+        <button class="more book" type="button">Забронировать</button>
+        <button class="rating" type="button">Рейтинг: 8.9</button>
       </div>
-      <div>
+      <div class="hotel3">
         <img src="img/photo-villas.jpg" alt="Фото Villas at Poco Diablo">
         <h3>Villas at Poco Diablo</h3>
         <p>апартаменты</p>
         <p>от 2000 Р.</p>
-        <button type="button">Подробнее</button>
-        <button type="button">Забронировать</button>
+        <button class="more" type="button">Подробнее</button>
+        <button class="more book" type="button">Забронировать</button>
+        <button class="rating" type="button">Рейтинг: 9.2</button>
       </div>
     </section>
     </main>
-    <footer>
-      <div class=heshtag>
-      <p>#visitsedona</p>
+    <footer> <!--footer start-->
+      <div class="footer">
+      <div class="hash">
+      <p class="visit">#visitsedona</p>
     </div>
-    <div class="sotial">
-      <ul>
-        <li><a href="http://twitter.com"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
-        <li><a href="http://facebook.com"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
-        <li><a href="http://youtube.com"><img src="img/icon-youtube.svg" alt="youtube"></a></li>
+    <div class="social">
+    <ul class="social-links links">
+        <li><a class="icon-twitter links" href="http://twitter.com"><img src="img/icon-twitter.svg" alt="twitter"></a></li>
+        <li><a class="icon-facebook" href="http://facebook.com"><img src="img/icon-facebook.svg" alt="facebook"></a></li>
+        <li><a class="icon-youtube" href="http://youtube.com"><img src="img/icon-youtube.svg" alt="youtube"></a></li>
       </ul>
     </div>
-    <div class="copirate">
-        <p>website by</p>
-        <li><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="HTML ACADEMY"></a></li>
+      <div class="academy">
+            <p>website by</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="logo-htmlacademy" src="img/logo-htmlacademy.svg" alt="HTML ACADEMY"></a>
+      </div>
     </div>
-    </footer>
+    </footer> <!--footer end-->
+  </div>
   </body>
 </html>

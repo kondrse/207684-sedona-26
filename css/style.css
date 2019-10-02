@@ -3,207 +3,117 @@ body{
   font-size: 14px;
   background-color: gray;
   margin: 0;
-  width: 1280px;
   padding: 0;
   border: 0;
   text-transform: uppercase;
+}
 
-  
+.content{
+  width: 1200px;
+  background-color: #ffffff;
 }
 .visually-hidden{
   display: none;
 }
-header{
-  width: 1200px;
-  height: 56px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
+.main-header{
   background-color: #ffffff;
-  
 }
-img.main-header-logo{
+.main-header-logo{
   width: 140px;
   height: 70px;
-  position: absolute;
-  left: 600px;
-  top: 14px;
-  right: auto;
-  margin: 0;
 }
-.main-navigation{
+.links a{
+  font-family: "PT Sans", Arial;
   font-size: 14px;
   line-height: 26px;
+  font-weight: bold;
   color: #000000;
-  margin-top: 0;
-  margin-bottom: 0;
-  background-color: #ffffff;
-} 
-.container{
-  display: flex;
-  align-items: center;
-} 
-.site-navigation{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
+  text-decoration: none;
   list-style: none;
 }
-a{
-  text-decoration: none;
-  color: #000000;
+.links{
+  list-style: none;
 }
+#hotels{
+  color: #766357;
+}
+.welcome-sedona{
 
-.intro section{
-  width: 1200px;
-  height: 800px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 0;
-  padding-top: 0;
-  border: 0;
-  background-color: #ffffff;
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
-  background-position: center bottom 215px, top center;
-  background-size: 1201px 59px, 1200px 800px;
+  background-position: center bottom 214px, top center;
+  background-size: 1200px 59px, 1200px 800px;
   background-repeat: no-repeat; 
 }
 .welcome{
   width: 459px;
   height: 353px;
-  margin-right: auto;
-  margin-left: 400px;
-  margin-top: 76px;
 }
 .info-block{
-  width: 1200px;
   height: 216px;
-  margin-top: 151px;
-  margin-bottom: 0px;
+  margin-top: auto;
+  margin-bottom: 0;
   background-color: #ffffff;
+  line-height: 26px;
+  text-align: center;
 }
 .info-sedona{
-  width: 1200px;
   font-size: 21px;
-  font-weight: bold;
   line-height: 26px;
-  text-align: center;
-  padding-top: 65px;
+  font-weight: bold;
 }
-.info-proposel{
+.hotels p{
+  color: #333333;
+  line-height: 26px;
+  text-align: left;
+}
+.more{
+  font-family: "PT Sans", Arial;
   font-size: 14px;
   line-height: 26px;
-  text-align: center;
-}
-main{
-  width: 1200px;
-  margin-top: -20px;
-  margin-right: 40px;
-  margin-left: 40px;
-  background-color: #ffffff;
-  background-position: center;
-}
-.advantage-block{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-
-}
-.real-city,
-.devil-bridge{
-  width: 1200px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: #81b3d2;
-  color: #ffffff;
-  text-align: center;
-}
-.real-city-text{
-  padding: 50px;
-}
-
-h3{
-  font-size: 21px;
-}
-
-.recomendation{
-  text-align: center;
-  background-color: #ffffff;
-  width: 380px;
-  padding-top: 60px;
-  padding-bottom: 71px;
-  margin-right: 0;
-  margin-left: 0;
-
-}
-.advantage-text{
-  text-align: center;
-}
-.devil-bridge-text{
-  padding: 50px;
-}
-.all-advantage{
-  width: 1200px;
-  height: 257px;
-  background-color: #eeeeee;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.advantage-text{
-  margin-left: 73px;
-  margin-right: 73px;
-}
-
-.search{
-  margin-left: 0;
-  margin-right: 40px;
-  width: 1200px;
-  font-size: 21px;
   font-weight: bold;
-  line-height: 26px;
-  text-align: center;
-  padding-top: 65px;
-  padding-left: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+}
+.book{
+  background-color: #766357;
+}
+.rating{
+  font-size: 14px;
+  line-height: 21px;
+  color: #666666;
+  background-color: #f2f2f2;
+}
+.search h3{
+  font-size: 30px;
+  line-height: 36px;
 }
 .search p{
   font-size: 14px;
-  font-weight: normal;
+  line-height: 24px;
+  color: #333333;
 }
 .searc-hotel-button{
-  width: 568px;
-  height: 86px;
-  background-color: #766357;
   font-size: 21px;
+  line-height: 26px;
   color: #ffffff;
-  border: 0;
+  background-color: #766357;
+  text-transform: uppercase;
+  text-align: center;
 }
-form{
+.search-hotel {
   width: 568px;
   height: 395px;
   margin: 0 auto;
-  padding: 60;
+  padding: 0;
   background-color: #ffffff;
-  position: absolute;
-  left: 350px;
-  right: auto;
 }
 label{
   font-size: 14px;
   font-weight: normal;
+  text-transform: uppercase;
   margin-top: 55px;
-  margin-left: 55px;
-  display: inline-block;
 
   
 }
@@ -214,25 +124,12 @@ input{
   margin-bottom: -25px;
   font-size: 14px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 input[type="number"]{
   width: 117px;
   height: 38px;
-  display: inline-block;
-}
-.old{
-  margin-left: 0px;
-  padding-left: 0px;
-}
-.kids{
-  margin-left: 20px;
-  margin-right: 60px;
-}
-.old,
-.kids{
-  display: inline-block;
-  
-}
+}  
 .search-request{
   text-align: center;
   width: 458px;
@@ -241,63 +138,24 @@ input[type="number"]{
   color: #ffffff;
   font-size: 21px;
   font-weight: bold;
+  text-transform: uppercase;
   border: 0;
   margin: 54px;
 }
-.map{
-  margin-left: auto;
-  margin-right: auto;
-}
-.map-sedona{
-  width: 1200px;
-  height: auto;
-}
-
-footer{
-  width: 1200px;
-  margin-bottom: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color: #ffffff;
-}
-.footer{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-.visit{
+.hash p{
+  font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
+  text-align: center;
 }
-.social{
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-}
-.social-links{
-  width: 17px;
-  height: 15px;
-
-}
-.icon-twitter,
-.icon-facebook,
-.icon-youtube{
-  
+.social-links a{
   background-color: #81b3d2;
-  background-position: center;
-  background-size: 45px 50px;
-  margin: 10px;
 }
-.academy{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.academy p{
+  font-size: 14px;
+  line-height: 26px;
 }
 .logo-htmlacademy{
   width: 115px;
-  height: 41px;
-  margin-left: 10px;
+  height: 41;
 }
-
