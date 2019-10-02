@@ -64,7 +64,7 @@ body{
 }
 .hotels p{
   color: #333333;
-  line-height: 26px;
+  line-height: 21px;
   text-align: left;
 }
 .more{
@@ -78,6 +78,7 @@ body{
 }
 .book{
   background-color: #766357;
+  line-height: 21px;
 }
 .rating{
   font-size: 14px;
