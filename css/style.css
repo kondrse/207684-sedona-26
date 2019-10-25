@@ -1,4 +1,4 @@
-body{
+  body{
   font-family: "PT Sans", Arial;
   font-size: 14px;
   background-color: gray;
@@ -639,13 +639,8 @@ input[type="date"]::-webkit-inner-spin-button {
   width: 114px;
   margin-left: 20px;
 }
-input[type="number"]::after{
-  color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    display: block;
-    background: url("../img/minus.svg") no-repeat;
-    width: 20px;
-    height: 20px;
+.old input[type="number"]::before{
+    
 }
 
 input[type="date"]:hover{
@@ -654,7 +649,7 @@ input[type="date"]:hover{
 
 input[type="date"]:focus {
      background-color: #ffffff; /* Цвет фона */
-     border: 1px solid #e5e5e5; /* Параметры рамки */
+     border: 2px solid #e5e5e5; /* Параметры рамки */
 }
 input[type="number"]{
   width: 117px;
@@ -693,6 +688,7 @@ input.search-request:active{
   background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
 }
+
 .result{
   font-size: 21px;
   line-height: 26px;
@@ -837,7 +833,7 @@ svg.logo-htmlacademy:active {
  ----- Сеточные стили ----- 
 body{
   width: 1200px;
-  background-image: url("../img/sedona-index.jpg");
+  background-image: url("../img/sedona-hotels.jpg");
   opacity: 0.3;
 }
 */
