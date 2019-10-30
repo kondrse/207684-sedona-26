@@ -674,8 +674,6 @@ a.active-sity{
   margin: 0;
 }
 
-
-
 .more{
   width: 110px;
   height: 27px;
@@ -701,7 +699,6 @@ a.active-sity{
   height: 27px;
   background-color: #766357;
   line-height: 21px;
-  
 }
 .book:hover{
   background-color: #604E43;
