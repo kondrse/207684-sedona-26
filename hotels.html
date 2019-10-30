@@ -33,16 +33,27 @@
             <legend>Инфраструктура:</legend>
           
             <p>
-              <input type="checkbox" name="pool" id="pool" tabindex="1" checked>
-              <label for="pool">Бассейн</label>
+              <label class="check" for="pool">
+              	<input class=" checkbox-input" type="checkbox" name="pool" id="pool" tabindex="1" checked>
+              	<span class="check-box"></span>
+                Бассейн
+              </label>
             </p>
             <p>
-              <input type="checkbox" name="parking" id="parking" tabindex="2">
-              <label for="parking">Парковка</label>
+              
+              <label class="check" for="parking">
+              	  <input class=" checkbox-input" type="checkbox" name="parking" id="parking" tabindex="2">
+              	  <span class="check-box"></span>
+                  Парковка
+              </label>
             </p>
             <p>
-              <input type="checkbox" name="network" id="network" tabindex="3">
-              <label for="network">WI-FI</label>
+              
+              <label class="check" for="network">
+                  <input class=" checkbox-input" type="checkbox" name="network" id="network" tabindex="3">
+                  <span class="check-box"></span>
+                  WI-FI
+              </label>
             </p>
           
         </div>
@@ -50,16 +61,28 @@
           
               <legend>Тип жилья:</legend>
               <p>
-                <input type="checkbox" name="hotel" id="hotel" tabindex="4" checked>
-                <label for="hotel">Гостиница</label>
+                
+                <label class="check" for="hotel">
+                   <input class=" checkbox-input" type="checkbox" name="hotel" id="hotel" tabindex="4" checked>
+                   <span class="check-box"></span>
+                   Гостиница
+               </label>
               </p>
               <p>
-                <input type="checkbox" name="motel" id="motel" tabindex="5" checked>
-                <label for="motel">Мотель</label>
+               
+                <label class="check" for="motel">
+                   <input class=" checkbox-input" type="checkbox" name="motel" id="motel" tabindex="5" checked>
+                   <span class="check-box"></span>
+                   Мотель
+                </label>
               </p>
               <p>
-                <input type="checkbox" name="apparts" id="apparts" tabindex="6"checked>
-                <label for="apparts">Апартаменты</label>
+                
+                <label class="check" for="apparts">
+                   <input class=" checkbox-input" type="checkbox" name="apparts" id="apparts" tabindex="6"checked>
+                   <span class="check-box"></span>
+                   Апартаменты
+                </label>
               </p>
         
         </div>
@@ -88,9 +111,11 @@
           <li><a class="active-sort" href="#">по цене</a></li>
           <li><a href="#">по типу</a></li>
           <li><a href="#">по рейтингу</a></li>
-          <li><a class="poligon" href="#"><svg class="poligon-up"><polygon  points="5.5,0 0,10 11,10 "/></svg></a></li>
-          <li><a class="poligon" href="#"><svg class="poligon-down active"><polygon points="5.5,10 0,0 11,0 "/></a></li>
         </ul>
+        <div class="poligon-up-down">
+          <p><a class="poligon" href="#"><svg class="poligon-up"><polygon  points="5.5,0 0,10 11,10 "/></svg></a></p>
+          <p><a class="poligon" href="#"><svg class="poligon-down active"><polygon points="5.5,10 0,0 11,0 "/></a></p>
+        </div>
       </div> <!-- Закончился блок фильтра -->
       <section class="hotels"> <!-- Начало блока Отелей -->
       <div class="hotel-n">
@@ -108,10 +133,10 @@
          </div>
           <div class="rating-ball">
            <div class="stars">
-             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+             <img src="img/star.svg" alt="star">
+             <img src="img/star.svg" alt="star">
+             <img src="img/star.svg" alt="star">
+             <img src="img/star.svg" alt="star">
            </div>
            
            <button class="rating" type="button">Рейтинг: 8.5</button>
@@ -134,9 +159,9 @@
         </div>
         <div class="rating-ball">
            <div class="stars">
-             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+             <img src="img/star.svg" alt="star">
+             <img src="img/star.svg" alt="star">
+             <img src="img/star.svg" alt="star">
            </div>
            <button class="rating" type="button">Рейтинг: 8.9</button>
          </div>
@@ -156,8 +181,8 @@
       </div>
         <div class="rating-ball">
            <div class="stars">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg>
+            <img src="img/star.svg" alt="star">
+            <img src="img/star.svg" alt="star">
            </div>
         <button class="rating" type="button">Рейтинг: 9.2</button>
        </div>
