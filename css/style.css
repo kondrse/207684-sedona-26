@@ -13,9 +13,9 @@
 .content{
   width: 1200px;
   background-color: #ffffff;
-  margin-left: 40px;
- /* margin-left: auto;
-  margin-right: auto;*/
+  /*margin-left: 40px;*/
+ margin-left: auto;
+  margin-right: auto;
 }
 .visually-hidden{
   display: none;
@@ -349,7 +349,7 @@ a.active-sity{
 .main-content{
   width: 1200px;
   margin-right: auto;
-  margin-left: 40px;
+  margin-left: auto;
   background-color: #ffffff;
 }
 .form-filter{
@@ -606,9 +606,20 @@ a.active-sity{
   padding: 0;
 }
 
+.sort-type li{
+  position: relative;
+  margin-left: 38px;
+}
 .sort-type li:nth-child(4),
+.sort-type li:nth-child(5)
+{
+  position: relative;
+  left: 450px;
+  margin-right: 10px;
+}
 .sort-type li:nth-child(5){
-  align-self: flex-end;
+  margin-left: 0;
+  
 }
 
 .hotels{
@@ -621,7 +632,7 @@ a.active-sity{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
 }
@@ -643,7 +654,7 @@ a.active-sity{
   justify-content: space-between;
   align-items: flex-start;
   
-  margin-right: 455px;
+  margin-left: 32px;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -651,9 +662,7 @@ a.active-sity{
   width: 184px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  
-  
+  justify-content: space-between; 
 }
 .hotels h3{
   margin: 0;
@@ -702,9 +711,12 @@ a.active-sity{
   background-color: rgba(80, 62, 51, 100);
 }
 .rating-ball{
+  position: relative;
+  left: 480px;
+  height: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
   margin-right: 73px;
 }
@@ -1036,7 +1048,7 @@ svg.active {
   align-items: center;
   margin-top: 0;
   margin-right: auto;
-  margin-left: 40px;
+  margin-left: auto;
 
 }
 .hash{
