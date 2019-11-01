@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
     <div class="content">
@@ -30,6 +29,7 @@
       <!-- тут будет форма поиска -->
       <form class="form-filter" action="https://echo.htmlacademy.ru" method="post">
         <div class="infrostucture">
+        	<fieldset>
             <legend>Инфраструктура:</legend>
           
             <p>
@@ -55,10 +55,10 @@
                   WI-FI
               </label>
             </p>
-          
+           </fieldset>
         </div>
         <div class="type-hotel">
-          
+          <fieldset>
               <legend>Тип жилья:</legend>
               <p>
                 
@@ -79,12 +79,12 @@
               <p>
                 
                 <label class="check" for="apparts">
-                   <input class=" checkbox-input" type="checkbox" name="apparts" id="apparts" tabindex="6"checked>
+                   <input class=" checkbox-input" type="checkbox" name="apparts" id="apparts" tabindex="6" checked>
                    <span class="check-box"></span>
                    Апартаменты
                 </label>
               </p>
-        
+            </fieldset>
         </div>
         <div class="filter-range">
           <div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -112,9 +112,9 @@
           <li><a href="#">по типу</a></li>
           <li><a href="#">по рейтингу</a></li>
         </ul>
-        <div class="poligon-up-down">
+        <div class="sort-poligon">
           <p><a class="poligon" href="#"><svg class="poligon-up"><polygon  points="5.5,0 0,10 11,10 "/></svg></a></p>
-          <p><a class="poligon" href="#"><svg class="poligon-down active"><polygon points="5.5,10 0,0 11,0 "/></a></p>
+          <p><a class="poligon" href="#"><svg class="poligon-down active"><polygon points="5.5,10 0,0 11,0 "/></svg></a></p>
         </div>
       </div> <!-- Закончился блок фильтра -->
       <section class="hotels"> <!-- Начало блока Отелей -->
@@ -213,6 +213,5 @@
       </div>
      </div>
     </footer> <!--footer end-->
-   </div>
   </body>
 </html>

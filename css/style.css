@@ -7,7 +7,7 @@
   border: 0;
   text-transform: uppercase;
   min-width: 1200px;
-  min-height: 2762px;
+  /*min-height: 2762px;*/
 }
 
 .content{
@@ -46,6 +46,7 @@
   margin-top: 0;
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
   
@@ -56,6 +57,7 @@ ul.site-navigation{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .site-navigation{
 list-style: none;
@@ -300,16 +302,11 @@ a.active-sity{
   line-height: 21px;
   color: #ffffff;
 }
-/*
-.all-advantage{
-  display: flex;
-  flex-direction: row;
-  min-height: 256px;
-  background-color: #eeeeee;
-}*/
+
 .advantage-text{
   width: 400px;
   height: 255px;
+  background-color: #eeeeee;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -378,6 +375,9 @@ a.active-sity{
   margin-bottom: 12px;
   color: #ffffff;
 
+}
+.form-filter fieldset{
+  border: 0;
 }
 .infrostucture legend,
 .type-hotel legend{
@@ -496,7 +496,7 @@ a.active-sity{
   left: 50%;
 
   width: 2px;
-  height: 22px;
+  height: 18px;
 
   background: #ffffff;
   transform: translate(-50%, -50%);
@@ -530,7 +530,18 @@ a.active-sity{
   background: none;
   border: none;
 }
-
+.price-controls input[type="text"]:hover{
+  background: none;
+  border: none;
+}
+.price-controls input[type="text"]:focus{
+  background: none;
+  border: none;
+}
+.price-controls input[type="text"]:active{
+  background: none;
+  border: none;
+}
 .range-controls {
   position: relative;
 
@@ -640,7 +651,7 @@ a.active-sity{
   position: relative;
   margin-left: 38px;
 }
-.poligon-up-down {
+.sort-poligon {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -649,7 +660,7 @@ a.active-sity{
   padding: 0;
   margin-left: auto;
 }
-  .poligon-up-down p{
+  .sort-poligon p{
   margin-right: 10px;
 }
 .sort-type li:nth-child(5){
@@ -720,7 +731,7 @@ a.active-sity{
 }
 .more:active{
   color: rgba(255, 255, 255, 0.3); 
-  background-color: rgba(84, 150, 189, 100);
+  background-color: rgba(84, 150, 189, 1);
 }
 .book{
   width: 142px;
@@ -733,7 +744,7 @@ a.active-sity{
 }
 .book:active{
   color: rgba(255, 255, 255, 0.3); 
-  background-color: rgba(80, 62, 51, 100);
+  background-color: rgba(80, 62, 51, 1);
 }
 .rating-ball{
   position: relative;
@@ -813,6 +824,11 @@ a.active-sity{
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+
+.modal-show {
+  display: block;
+}
+
 .search-form{
   position: absolute;
   width: 568px;
@@ -918,23 +934,23 @@ a.active-sity{
 
 }
 
-.minus p{
+.minus {
   margin: 0;
   font-size: 32px;
   color: #cacaca;
 
 }
-.plus p{
+.plus{
   margin: 0;
   font-size: 32px;
   color: #cacaca;
 }
-.minus p:hover,
-.plus p:hover{
+.minus:hover,
+.plus:hover{
   color: #000000;
 }
-.minus p:active,
-.plus p:active{
+.minus:active,
+.plus:active{
   color: #81b3d2;
 }
 

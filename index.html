@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
     <div class="content">
@@ -159,19 +158,18 @@
         </p>
          <p class="old">
              <label for="old">Взрослые:</label>
-             <button class="minus"><p>-</p>
+             <button class="minus">-
              </button>
              <input type="text" name="old" id="old" value="2" required>
-             <button class="plus"><p>+</p></button>
+             <button class="plus">+</button>
          </p>
          
          <p class="kids">
             <label for="kids">Дети:</label>
 
-            <button class="minus"><p>-</p>
-             </button>
+            <button class="minus">-</button>
             <input type="text" name="kids" id="kids" value="0">
-            <button class="plus"><p>+</p></button>
+            <button class="plus">+</button>
         
          </p>
         
@@ -209,5 +207,19 @@
       </div>
      </div>
     </footer> <!--footer end-->
+
+    <script type="text/javascript">
+      var link = document.querySelector(".searc-hotel-button");
+      var popup = document.querySelector(".search-form");
+      var close = popup.querySelector(".searc-hotel-button");
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+  });
+      close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal-show");
+  });
+    </script>
   </body>
 </html>
