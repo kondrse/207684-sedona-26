@@ -36,13 +36,13 @@
           align-items: center;
   min-height: 56px;
 }
-.main-header-logo{
+/*.main-header-logo{
   width: 140px;
-  height: 70px;
-}
+  height: 72px;
+}*/
 .logo{
-  width: 136px;
-  height: 66px;
+  width: 140px;
+  height: 72px;
   position: absolute;
   top: 0;
   left: 530px;
@@ -184,10 +184,10 @@ a.active-sity{
   background-size: 1200px 725px;
   background-repeat: no-repeat;  
 }
-img.welcome{
+/*img.welcome{
   width: 458px;
   height: 352px;
-}
+}*/
 .welcome-photo{ 
   min-height: 510px;
   background-image: url("../img/intro-mask.svg");
@@ -311,10 +311,10 @@ img.welcome{
   color: #ffffff;
   margin: 0;
 }
-.real-city img{
+/*.real-city img{
   width: 800px;
   height: 260px;
-}
+}*/
 .recomendation{
   width: 399px;
   height: 300px;
@@ -372,10 +372,10 @@ img.welcome{
   margin-top: 0;
   margin-bottom: 85px;
 }
-.devil-bridge img{
+/*.devil-bridge img{
   width: 800px;
   height: 260px;
-}
+}*/
 .devil-bridge-text h3{
   display: block;
   width: 157px;
@@ -891,8 +891,7 @@ img.welcome{
 
 }
 .hotel-n img{
-  width: 135px;
-  height: 90px;
+  
   margin-left: 72px;
   margin-bottom: 5px;
 }
@@ -1014,8 +1013,7 @@ img.welcome{
   margin-top: -1px;
 }
 .stars img{
-  width: 18px;
-  height: 17px;
+  
   margin-left: 6px;
 }
 .rating{
