@@ -36,10 +36,7 @@
           align-items: center;
   min-height: 56px;
 }
-/*.main-header-logo{
-  width: 140px;
-  height: 72px;
-}*/
+
 .logo{
   width: 140px;
   height: 72px;
@@ -47,9 +44,6 @@
   top: 0;
   left: 530px;
   z-index: 10;
-
- /* margin: 0 auto auto auto;
-*/
 }
 .main-navigation{
   width: 1200px;
@@ -1013,7 +1007,6 @@ a.active-sity{
   margin-top: -1px;
 }
 .stars img{
-  
   margin-left: 6px;
 }
 .rating{
@@ -1028,7 +1021,6 @@ a.active-sity{
 }
 .search{
   position: relative;
-
 }
 .search-intro{
   display: -webkit-box;
