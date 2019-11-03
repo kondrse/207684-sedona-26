@@ -24,6 +24,7 @@
   background-color: #ffffff;
   margin-bottom: 0;
   width: 1200px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,8 +38,12 @@
   width: 136px;
   height: 66px;
   position: absolute;
-  margin: 0 auto auto auto;
+  top: 0;
+  left: 530px;
+  z-index: 10;
 
+ /* margin: 0 auto auto auto;
+*/
 }
 .main-navigation{
   width: 1200px;
@@ -126,18 +131,15 @@ a.active-sity{
   height: 725px;
   display: flex;
   flex-direction: column;
-  
   background-image: url("../img/background-photo.jpg");
   background-position: top center;
   background-size: 1200px 725px;
   background-repeat: no-repeat; 
- 
 }
 img.welcome{
   width: 458px;
   height: 352px;
 }
-
 .welcome-photo{ 
   min-height: 510px;
   background-image: url("../img/intro-mask.svg");
@@ -243,19 +245,16 @@ img.welcome{
   background-image: url("../img/icon-home.svg");
   background-repeat: no-repeat;
   background-position: 160px 60px;
-
 }
 .advantage-block li:nth-child(3){
   background-image: url("../img/icon-food.svg");
   background-repeat: no-repeat;
   background-position: 165px 60px;
 }
-
 .advantage-block li:nth-child(4){
   background-image: url("../img/icon-souvenir.svg");
   background-repeat: no-repeat;
   background-position: 170px 55px;
-  
 }
 .recomendation img{
   margin-top: 18px;
@@ -310,7 +309,6 @@ img.welcome{
   line-height: 21px;
   color: #ffffff;
 }
-
 .advantage-text{
   width: 400px;
   height: 255px;
@@ -318,8 +316,7 @@ img.welcome{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
-  
+  align-items: center; 
 }
 .advantage-text h3{
   display: block;
@@ -378,16 +375,13 @@ img.welcome{
   margin-top: 5px;
   margin-left: 70px;
   margin-bottom: 12px;
-  color: #ffffff;
-
-  
+  color: #ffffff; 
 }
 .form-filter fieldset{
   height: 159px;
   border: 0;
   padding: 0;
   margin-top: 3px;
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -397,7 +391,6 @@ img.welcome{
 .type-hotel legend{
   font-size: 16px;
   line-height: 21px;
-  
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 8px;
@@ -489,26 +482,20 @@ img.welcome{
   padding-bottom: 5px;
   color: #ffffff;
   text-transform: uppercase;
-
 }
 
 .filter-range-title {
   margin-top: 0;
   margin-bottom: 10px;
-
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
 }
-
 .price-controls {
   position: relative;
-  
   height: 33px;
   margin-bottom: 20px;
-  
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -833,7 +820,7 @@ img.welcome{
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  min-height: 290px;
+  height: 290px;
   position: relative;
 }
 .search-intro h3{
@@ -876,7 +863,7 @@ img.welcome{
 .modal-show {
   display: block;
 }
-
+/* Форма поиска гостинницы */
 .search-form{
   position: absolute;
   width: 568px;
@@ -897,10 +884,7 @@ img.welcome{
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  
-
 }
-
 
 .search-hotel label{
   font: inherit;
@@ -911,8 +895,8 @@ img.welcome{
   margin-left: 0;
   margin-right: 20px;
 }
-.search-hotel input{
 
+.search-hotel input{
   width: 329px;
   min-height: 37px;
   font: inherit;
@@ -1030,14 +1014,17 @@ img.welcome{
 }
 
 
-input[type="text"]:hover{
+.date-in input[type="text"]:hover,
+.date-out input[type="text"]:hover{
   background-color: #ebebeb;
 }
 
-input[type="text"]:focus {
-     background-color: #ffffff; /* Цвет фона */
-     border: 2px solid #e5e5e5; /* Параметры рамки */
+.date-in input[type="text"]:focus,
+.date-out input[type="text"]:focus {
+     background-color: #ffffff; 
+     border: 2px solid #e5e5e5; 
 }
+
 .old input[type="text"],
 .kids input[type="text"]{
   width: 115px;
@@ -1220,14 +1207,3 @@ svg.logo-htmlacademy:active {
 }
 
 
-/* ----- Сеточные стили ----- */
-/*body{
-  background-image: url("../img/sedona-hotels.jpg");
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  border: 1px;
-  border-color: red;
-  margin-left: 40;
-  margin-right: auto;
-}
-*/
