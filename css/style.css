@@ -24,7 +24,6 @@
   background-color: #ffffff;
   margin-bottom: 0;
   width: 1200px;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,12 +37,8 @@
   width: 136px;
   height: 66px;
   position: absolute;
-  top: 0;
-  left: 530px;
-  z-index: 10;
+  margin: 0 auto auto auto;
 
- /* margin: 0 auto auto auto;
-*/
 }
 .main-navigation{
   width: 1200px;
@@ -838,7 +833,7 @@ img.welcome{
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 290px;
+  min-height: 290px;
   position: relative;
 }
 .search-intro h3{
@@ -881,7 +876,7 @@ img.welcome{
 .modal-show {
   display: block;
 }
-/* Форма поиска гостинницы */
+
 .search-form{
   position: absolute;
   width: 568px;
@@ -902,7 +897,10 @@ img.welcome{
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
+  
+
 }
+
 
 .search-hotel label{
   font: inherit;
@@ -913,8 +911,8 @@ img.welcome{
   margin-left: 0;
   margin-right: 20px;
 }
-
 .search-hotel input{
+
   width: 329px;
   min-height: 37px;
   font: inherit;
@@ -1032,17 +1030,14 @@ img.welcome{
 }
 
 
-.date-in input[type="text"]:hover,
-.date-out input[type="text"]:hover{
+input[type="text"]:hover{
   background-color: #ebebeb;
 }
 
-.date-in input[type="text"]:focus,
-.date-out input[type="text"]:focus {
-     background-color: #ffffff; 
-     border: 2px solid #e5e5e5; 
+input[type="text"]:focus {
+     background-color: #ffffff; /* Цвет фона */
+     border: 2px solid #e5e5e5; /* Параметры рамки */
 }
-
 .old input[type="text"],
 .kids input[type="text"]{
   width: 115px;
